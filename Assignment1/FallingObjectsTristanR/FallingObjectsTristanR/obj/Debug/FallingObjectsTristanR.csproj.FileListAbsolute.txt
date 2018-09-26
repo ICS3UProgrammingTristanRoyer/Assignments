@@ -1,0 +1,10 @@
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csprojAssemblyReference.cache
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.FallingObjectsForm.resources
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.Properties.Resources.resources
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csproj.GenerateResource.cache
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csproj.CoreCompileInputs.cache
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.exe.config
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.exe
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.pdb
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.exe
+C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.pdb
