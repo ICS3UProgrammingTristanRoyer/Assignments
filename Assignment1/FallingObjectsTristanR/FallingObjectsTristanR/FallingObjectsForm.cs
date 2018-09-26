@@ -37,7 +37,8 @@ namespace FallingObjectsTristanR
 				time = double.Parse(txtTime.Text);
 
 				// Calculate the height above the ground
-				height = 100 - (0.5 * 9.81 * Math.Pow(time, 2));
+				height =  100 -  (0.5 * 9.81 * Math.Pow(time, 2));
+			    Math.Round(height);
 
 				// Insert the height to it's respective label
 

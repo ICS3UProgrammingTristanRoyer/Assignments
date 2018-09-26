@@ -8,3 +8,12 @@ C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR
 C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.pdb
 C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.exe
 C:\Users\Clayt\Desktop\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.pdb
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.exe.config
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.exe
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.pdb
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csprojResolveAssemblyReference.cache
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.FallingObjectsForm.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.Properties.Resources.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csproj.GenerateResource.Cache
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.exe
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.pdb
