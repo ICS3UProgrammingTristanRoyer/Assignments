@@ -32,13 +32,14 @@ namespace FallingObjectsTristanR
 			else
 			{
 				//Declare local variables
-				double time, height;
+				double time,height; 
+				
 				// convert the string from the text box to a double
 				time = double.Parse(txtTime.Text);
 
 				// Calculate the height above the ground
-				height =  100 -  (0.5 * 9.81 * Math.Pow(time, 2));
-			    Math.Round(height);
+				height =   100 -  ( 0.5 *  9.81 *  Math.Pow(time, 2));
+				height = Math.Round(height, 2, MidpointRounding.AwayFromZero);
 
 				// Insert the height to it's respective label
 
@@ -80,6 +81,11 @@ namespace FallingObjectsTristanR
 		private void FallingObjectsForm_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 	}

@@ -17,3 +17,13 @@ N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\As
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csproj.GenerateResource.Cache
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.exe
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Royer, Tristan (s450073)\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.pdb
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.exe.config
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.exe
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\bin\Debug\FallingObjectsTristanR.pdb
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csprojAssemblyReference.cache
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.FallingObjectsForm.resources
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.Properties.Resources.resources
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csproj.GenerateResource.cache
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.csproj.CoreCompileInputs.cache
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.exe
+C:\Users\Clayt\Desktop\Assignments\Assignment1\FallingObjectsTristanR\FallingObjectsTristanR\obj\Debug\FallingObjectsTristanR.pdb
