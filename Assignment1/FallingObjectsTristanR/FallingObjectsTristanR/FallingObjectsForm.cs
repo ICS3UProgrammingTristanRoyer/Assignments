@@ -52,7 +52,7 @@ namespace FallingObjectsTristanR
 
 				this.lblHeight.Text = Convert.ToString(height) + " meters";
 
-				if (height < 0)
+				if (height < 1)
 				{
 					// if the ball has already reached the ground it will display the appropriate text.
 					this.lblHeight.Text = "The ball has already eached the ground";
