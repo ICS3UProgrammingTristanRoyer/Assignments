@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Royer
+ * Created on: 27-09-2018
+ * Created for: ICS3U Programming
+ * Assignment #2 - Falling Objects
+ * This program calculates the height of an object above the ground using the time given by the user.
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,7 +52,7 @@ namespace FallingObjectsTristanR
 
 				this.lblHeight.Text = Convert.ToString(height) + " meters";
 
-				if (time > 4.51)
+				if (height < 0)
 				{
 					// if the ball has already reached the ground it will display the appropriate text.
 					this.lblHeight.Text = "The ball has already eached the ground";
@@ -85,6 +92,7 @@ namespace FallingObjectsTristanR
 
 		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+			// closes the program
 			this.Close();
 		}
 	}
