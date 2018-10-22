@@ -19,8 +19,33 @@ namespace PizzaOrderTristanR
 
 		private void btnCalculate_Click(object sender, EventArgs e)
 		{
-			double costOfSize, costOfToppings, costOfDrinks, costOfFries, discountPrice, subtotal,total,HST, studentDiscount;
-			studentDiscount = total * 0.25;
+			double costOfSize, costOfToppings, costOfDrinks, costOfFries, discountPrice, subtotal,total,HST, studentDiscount , tax , numberOfDrinks,numberOfPizzas , numberOfToppings;
+
+			numberOfDrinks = (double)(nudDrinks.Value);
+			numberOfToppings = (double)(nudToppings.Value);
+			numberOfPizzas = (double)(nudToppings.Value);
+
+			costOfDrinks = numberOfDrinks * 2;
+			if (numberOfToppings == 0)
+			{ costOfToppings = 0;
+			}
+			else if (numberOfToppings == 1)
+			{ costOfToppings = 0.75;
+			}
+			else if (numberOfToppings == 2)
+			{
+				costOfToppings = 1.35;
+			}
+			else if (numberOfToppings == 3)
+			{
+				costOfToppings = 2.15;
+			}
+			else if (numberOfToppings == 4)
+			{
+				costOfToppings = 2.75;
+			}
+			
+
 			if (this.radL.Checked == true )
 			{
 				costOfSize = 10.00;  
@@ -31,18 +56,42 @@ namespace PizzaOrderTristanR
 			}
 			else
 			{
-				lblSubtotalAnswer.Text = "Enter a valid size";
+				lblError1.Text = "Enter a valid size";
 			}
 			if (this.radYesStudent.Checked == true)
 			{ discountPrice = total - studentDiscount;
 			}
 			else
-			{ lblStudentPriceAnswer.Text = "n/a;";
+			{ lblStudentPriceAnswer.Text = "n/a";
 			}
+			if (this.radQuebec.Checked == true)
+			{
+				tax = 0.15;
+			}
+			else if (this.radOntario.Checked == true)
+			{
+				tax = 0.13;
+			}
+			else
+			{
+				lblError2.Text = "Please enter your province";
+			}
+			costOfDrinks =
 
-			subtotal = ()
+			subtotal = (costOfSize + costOfToppings) * nudNumberOfPizzas + costOfDrinks + costOfFries;
+			studentDiscount = total * 0.25;
 
-			
+
+
+		}
+
+		private void PizzaOrderForm_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void nudDrinks_ValueChanged(object sender, EventArgs e)
+		{
 
 		}
 	}

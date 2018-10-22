@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Martin-Berube-Food-Pizza.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-724219.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76599be63cbb512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza-animated-gif-21.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
