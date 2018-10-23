@@ -103,17 +103,17 @@ namespace PizzaOrderTristanR
 
 
 			subtotal = costOfSize + costOfToppings * numberOfPizzas + costOfDrinks + costOfFries;
-			lblSubtotalAnswer.Text = String.Format("${0:0.00}", subtotal);
+			lblSubtotalAnswer.Text = String.Format("CA${0:0.00}", subtotal);
 			HST = subtotal * tax;
-			lblHSTAnswer.Text = String.Format("${0:0.00}", HST);
+			lblHSTAnswer.Text = String.Format("CA${0:0.00}", HST);
 			total = subtotal + HST;
-			lblTotalAnswer.Text = String.Format("${0:0.00}", total);
+			lblTotalAnswer.Text = String.Format("CA${0:0.00}", total);
 			studentDiscount = total * 0.25;
 			discountPrice = total - studentDiscount;
 
 			if (this.radYesStudent.Checked == true)
 			{
-				lblStudentPriceAnswer.Text = String.Format("${0:0.00}", discountPrice);
+				lblStudentPriceAnswer.Text = String.Format("CA${0:0.00}", discountPrice);
 				lblError3.Text = "--";
 			}
 			else if (this.radNoStudent.Checked == true)
