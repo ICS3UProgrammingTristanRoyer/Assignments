@@ -57,18 +57,21 @@
 			this.radOntario = new System.Windows.Forms.RadioButton();
 			this.radQuebec = new System.Windows.Forms.RadioButton();
 			this.lblFries = new System.Windows.Forms.Label();
-			this.radYesFries = new System.Windows.Forms.RadioButton();
-			this.radNoFries = new System.Windows.Forms.RadioButton();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lblError1 = new System.Windows.Forms.Label();
 			this.lblError2 = new System.Windows.Forms.Label();
 			this.lblError3 = new System.Windows.Forms.Label();
-			this.lblError4 = new System.Windows.Forms.Label();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.nudFries = new System.Windows.Forms.NumericUpDown();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudToppings)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudDrinks)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudNumberOfPizzas)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.groupBox1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.nudFries)).BeginInit();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -96,7 +99,7 @@
 			// 
 			this.lblToppings.AutoSize = true;
 			this.lblToppings.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.lblToppings.Location = new System.Drawing.Point(12, 112);
+			this.lblToppings.Location = new System.Drawing.Point(12, 175);
 			this.lblToppings.Name = "lblToppings";
 			this.lblToppings.Size = new System.Drawing.Size(179, 13);
 			this.lblToppings.TabIndex = 2;
@@ -106,7 +109,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label3.Location = new System.Drawing.Point(12, 138);
+			this.label3.Location = new System.Drawing.Point(12, 213);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(167, 13);
 			this.label3.TabIndex = 3;
@@ -133,13 +136,14 @@
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
+			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
 			// nudToppings
 			// 
 			this.nudToppings.BackColor = System.Drawing.Color.Teal;
-			this.nudToppings.Location = new System.Drawing.Point(197, 110);
+			this.nudToppings.Location = new System.Drawing.Point(197, 175);
 			this.nudToppings.Maximum = new decimal(new int[] {
             4,
             0,
@@ -154,7 +158,7 @@
 			this.radL.AutoSize = true;
 			this.radL.BackColor = System.Drawing.Color.Teal;
 			this.radL.Checked = true;
-			this.radL.Location = new System.Drawing.Point(172, 28);
+			this.radL.Location = new System.Drawing.Point(6, 19);
 			this.radL.Name = "radL";
 			this.radL.Size = new System.Drawing.Size(52, 17);
 			this.radL.TabIndex = 7;
@@ -166,7 +170,7 @@
 			// 
 			this.radXL.AutoSize = true;
 			this.radXL.BackColor = System.Drawing.Color.Teal;
-			this.radXL.Location = new System.Drawing.Point(172, 51);
+			this.radXL.Location = new System.Drawing.Point(6, 46);
 			this.radXL.Name = "radXL";
 			this.radXL.Size = new System.Drawing.Size(79, 17);
 			this.radXL.TabIndex = 8;
@@ -176,7 +180,7 @@
 			// nudDrinks
 			// 
 			this.nudDrinks.BackColor = System.Drawing.Color.Teal;
-			this.nudDrinks.Location = new System.Drawing.Point(197, 136);
+			this.nudDrinks.Location = new System.Drawing.Point(197, 211);
 			this.nudDrinks.Name = "nudDrinks";
 			this.nudDrinks.Size = new System.Drawing.Size(120, 20);
 			this.nudDrinks.TabIndex = 9;
@@ -196,7 +200,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label2.Location = new System.Drawing.Point(12, 81);
+			this.label2.Location = new System.Drawing.Point(11, 134);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(168, 13);
 			this.label2.TabIndex = 13;
@@ -205,7 +209,7 @@
 			// nudNumberOfPizzas
 			// 
 			this.nudNumberOfPizzas.BackColor = System.Drawing.Color.Teal;
-			this.nudNumberOfPizzas.Location = new System.Drawing.Point(197, 79);
+			this.nudNumberOfPizzas.Location = new System.Drawing.Point(197, 134);
 			this.nudNumberOfPizzas.Minimum = new decimal(new int[] {
             1,
             0,
@@ -294,7 +298,7 @@
 			// 
 			this.lblStudent.AutoSize = true;
 			this.lblStudent.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.lblStudent.Location = new System.Drawing.Point(12, 195);
+			this.lblStudent.Location = new System.Drawing.Point(5, 280);
 			this.lblStudent.Name = "lblStudent";
 			this.lblStudent.Size = new System.Drawing.Size(99, 26);
 			this.lblStudent.TabIndex = 23;
@@ -304,7 +308,7 @@
 			// 
 			this.radYesStudent.AutoSize = true;
 			this.radYesStudent.BackColor = System.Drawing.Color.Teal;
-			this.radYesStudent.Location = new System.Drawing.Point(161, 193);
+			this.radYesStudent.Location = new System.Drawing.Point(6, 19);
 			this.radYesStudent.Name = "radYesStudent";
 			this.radYesStudent.Size = new System.Drawing.Size(43, 17);
 			this.radYesStudent.TabIndex = 24;
@@ -316,7 +320,7 @@
 			// 
 			this.radNoStudent.AutoSize = true;
 			this.radNoStudent.BackColor = System.Drawing.Color.Teal;
-			this.radNoStudent.Location = new System.Drawing.Point(161, 216);
+			this.radNoStudent.Location = new System.Drawing.Point(6, 45);
 			this.radNoStudent.Name = "radNoStudent";
 			this.radNoStudent.Size = new System.Drawing.Size(39, 17);
 			this.radNoStudent.TabIndex = 25;
@@ -328,7 +332,7 @@
 			// 
 			this.lblProvince.AutoSize = true;
 			this.lblProvince.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.lblProvince.Location = new System.Drawing.Point(9, 321);
+			this.lblProvince.Location = new System.Drawing.Point(12, 370);
 			this.lblProvince.Name = "lblProvince";
 			this.lblProvince.Size = new System.Drawing.Size(135, 13);
 			this.lblProvince.TabIndex = 26;
@@ -338,7 +342,7 @@
 			// 
 			this.radOntario.AutoSize = true;
 			this.radOntario.BackColor = System.Drawing.Color.Teal;
-			this.radOntario.Location = new System.Drawing.Point(161, 313);
+			this.radOntario.Location = new System.Drawing.Point(6, 23);
 			this.radOntario.Name = "radOntario";
 			this.radOntario.Size = new System.Drawing.Size(62, 17);
 			this.radOntario.TabIndex = 27;
@@ -350,7 +354,7 @@
 			// 
 			this.radQuebec.AutoSize = true;
 			this.radQuebec.BackColor = System.Drawing.Color.Teal;
-			this.radQuebec.Location = new System.Drawing.Point(161, 336);
+			this.radQuebec.Location = new System.Drawing.Point(6, 46);
 			this.radQuebec.Name = "radQuebec";
 			this.radQuebec.Size = new System.Drawing.Size(63, 17);
 			this.radQuebec.TabIndex = 28;
@@ -362,44 +366,11 @@
 			// 
 			this.lblFries.AutoSize = true;
 			this.lblFries.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.lblFries.Location = new System.Drawing.Point(16, 399);
+			this.lblFries.Location = new System.Drawing.Point(13, 424);
 			this.lblFries.Name = "lblFries";
-			this.lblFries.Size = new System.Drawing.Size(98, 13);
+			this.lblFries.Size = new System.Drawing.Size(149, 13);
 			this.lblFries.TabIndex = 30;
-			this.lblFries.Text = "Do you want fries?:";
-			// 
-			// radYesFries
-			// 
-			this.radYesFries.AutoSize = true;
-			this.radYesFries.BackColor = System.Drawing.Color.Teal;
-			this.radYesFries.Location = new System.Drawing.Point(161, 380);
-			this.radYesFries.Name = "radYesFries";
-			this.radYesFries.Size = new System.Drawing.Size(43, 17);
-			this.radYesFries.TabIndex = 31;
-			this.radYesFries.TabStop = true;
-			this.radYesFries.Text = "Yes";
-			this.radYesFries.UseVisualStyleBackColor = false;
-			// 
-			// radNoFries
-			// 
-			this.radNoFries.AutoSize = true;
-			this.radNoFries.BackColor = System.Drawing.Color.Teal;
-			this.radNoFries.Location = new System.Drawing.Point(161, 403);
-			this.radNoFries.Name = "radNoFries";
-			this.radNoFries.Size = new System.Drawing.Size(39, 17);
-			this.radNoFries.TabIndex = 32;
-			this.radNoFries.TabStop = true;
-			this.radNoFries.Text = "No";
-			this.radNoFries.UseVisualStyleBackColor = false;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImage = global::PizzaOrderTristanR.Properties.Resources.pizza_animated_gif_21;
-			this.pictureBox1.Location = new System.Drawing.Point(395, 27);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(254, 246);
-			this.pictureBox1.TabIndex = 33;
-			this.pictureBox1.TabStop = false;
+			this.lblFries.Text = "How many fries do you want?:";
 			// 
 			// lblError1
 			// 
@@ -431,15 +402,51 @@
 			this.lblError3.TabIndex = 36;
 			this.lblError3.Text = "--";
 			// 
-			// lblError4
+			// groupBox1
 			// 
-			this.lblError4.AutoSize = true;
-			this.lblError4.BackColor = System.Drawing.Color.Teal;
-			this.lblError4.Location = new System.Drawing.Point(320, 576);
-			this.lblError4.Name = "lblError4";
-			this.lblError4.Size = new System.Drawing.Size(13, 13);
-			this.lblError4.TabIndex = 37;
-			this.lblError4.Text = "--";
+			this.groupBox1.Controls.Add(this.radOntario);
+			this.groupBox1.Controls.Add(this.radQuebec);
+			this.groupBox1.Location = new System.Drawing.Point(150, 333);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(200, 78);
+			this.groupBox1.TabIndex = 38;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Provinces";
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Controls.Add(this.radYesStudent);
+			this.groupBox2.Controls.Add(this.radNoStudent);
+			this.groupBox2.Location = new System.Drawing.Point(150, 259);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(200, 68);
+			this.groupBox2.TabIndex = 39;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "Student?";
+			// 
+			// nudFries
+			// 
+			this.nudFries.BackColor = System.Drawing.Color.Teal;
+			this.nudFries.Location = new System.Drawing.Point(181, 417);
+			this.nudFries.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+			this.nudFries.Name = "nudFries";
+			this.nudFries.Size = new System.Drawing.Size(120, 20);
+			this.nudFries.TabIndex = 40;
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.radL);
+			this.groupBox3.Controls.Add(this.radXL);
+			this.groupBox3.Location = new System.Drawing.Point(156, 27);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(200, 69);
+			this.groupBox3.TabIndex = 41;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "Size";
 			// 
 			// PizzaOrderForm
 			// 
@@ -448,19 +455,15 @@
 			this.BackgroundImage = global::PizzaOrderTristanR.Properties.Resources._76599be63cbb512;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(649, 624);
-			this.Controls.Add(this.lblError4);
+			this.Controls.Add(this.groupBox3);
+			this.Controls.Add(this.nudFries);
+			this.Controls.Add(this.groupBox2);
+			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.lblError3);
 			this.Controls.Add(this.lblError2);
 			this.Controls.Add(this.lblError1);
-			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.radNoFries);
-			this.Controls.Add(this.radYesFries);
 			this.Controls.Add(this.lblFries);
-			this.Controls.Add(this.radQuebec);
-			this.Controls.Add(this.radOntario);
 			this.Controls.Add(this.lblProvince);
-			this.Controls.Add(this.radNoStudent);
-			this.Controls.Add(this.radYesStudent);
 			this.Controls.Add(this.lblStudent);
 			this.Controls.Add(this.lblStudentPriceAnswer);
 			this.Controls.Add(this.lblTotalAnswer);
@@ -473,8 +476,6 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.lblSubtotal);
 			this.Controls.Add(this.nudDrinks);
-			this.Controls.Add(this.radXL);
-			this.Controls.Add(this.radL);
 			this.Controls.Add(this.nudToppings);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.lblToppings);
@@ -491,7 +492,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.nudToppings)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudDrinks)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudNumberOfPizzas)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.nudFries)).EndInit();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -527,13 +534,13 @@
 		private System.Windows.Forms.RadioButton radOntario;
 		private System.Windows.Forms.RadioButton radQuebec;
 		private System.Windows.Forms.Label lblFries;
-		private System.Windows.Forms.RadioButton radYesFries;
-		private System.Windows.Forms.RadioButton radNoFries;
-		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label lblError1;
 		private System.Windows.Forms.Label lblError2;
 		private System.Windows.Forms.Label lblError3;
-		private System.Windows.Forms.Label lblError4;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.NumericUpDown nudFries;
+		private System.Windows.Forms.GroupBox groupBox3;
 	}
 }
 

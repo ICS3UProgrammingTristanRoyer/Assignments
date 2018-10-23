@@ -19,67 +19,112 @@ namespace PizzaOrderTristanR
 
 		private void btnCalculate_Click(object sender, EventArgs e)
 		{
-			double costOfSize, costOfToppings, costOfDrinks, costOfFries, discountPrice, subtotal,total,HST, studentDiscount , tax , numberOfDrinks,numberOfPizzas , numberOfToppings;
+			double tax,costOfSize,costOfToppings,numberOfToppings, costOfDrinks, costOfFries, discountPrice, subtotal,total,HST, studentDiscount , numberOfDrinks,numberOfPizzas , numberOfFries;
+			const Double ONE_TOPPING = 0.75;
+			const Double TWO_TOPPINGS = 1.35;
+			const Double THREE_TOPPINGS = 2.15;
+			const Double FOUR_TOPPINGS = 2.75;
+			const Double LARGE = 10.00;
+			const Double EXTRA_LARGE = 13.00;
+			const Double QUEBEC = 0.15;
+			const Double ONTARIO = 0.13;
+
+
 
 			numberOfDrinks = (double)(nudDrinks.Value);
 			numberOfToppings = (double)(nudToppings.Value);
 			numberOfPizzas = (double)(nudToppings.Value);
-
+			numberOfFries = (double)(nudFries.Value);
 			costOfDrinks = numberOfDrinks * 2;
+			costOfFries = numberOfFries * 3;
+			costOfToppings = 0;
+			tax = 0;
+			costOfSize = 0;
+
+
 			if (numberOfToppings == 0)
-			{ costOfToppings = 0;
+			{
+				
+				costOfToppings = costOfToppings + 0;
 			}
 			else if (numberOfToppings == 1)
-			{ costOfToppings = 0.75;
+			{ costOfToppings = costOfToppings + ONE_TOPPING;
 			}
 			else if (numberOfToppings == 2)
 			{
-				costOfToppings = 1.35;
+				costOfToppings = costOfToppings + TWO_TOPPINGS;
 			}
 			else if (numberOfToppings == 3)
 			{
-				costOfToppings = 2.15;
+				costOfToppings = costOfToppings + THREE_TOPPINGS;
 			}
 			else if (numberOfToppings == 4)
 			{
-				costOfToppings = 2.75;
+				costOfToppings = costOfToppings + FOUR_TOPPINGS;
 			}
 			
-
+			
 			if (this.radL.Checked == true )
 			{
-				costOfSize = 10.00;  
+				costOfSize = costOfSize + LARGE;
+				lblError1.Text = "--";
+
 			}
 			else if (this.radXL.Checked == true )
 			{
-				costOfSize = 13.00;
+				costOfSize = costOfSize + EXTRA_LARGE;
+				lblError1.Text = "--";
+
 			}
 			else
 			{
 				lblError1.Text = "Enter a valid size";
 			}
-			if (this.radYesStudent.Checked == true)
-			{ discountPrice = total - studentDiscount;
-			}
-			else
-			{ lblStudentPriceAnswer.Text = "n/a";
-			}
+		
 			if (this.radQuebec.Checked == true)
 			{
-				tax = 0.15;
+				tax = tax + QUEBEC;
+				lblError2.Text = "--";
+
 			}
 			else if (this.radOntario.Checked == true)
 			{
-				tax = 0.13;
+				tax = tax + ONTARIO;
+				lblError2.Text = "--";
+
 			}
 			else
 			{
 				lblError2.Text = "Please enter your province";
 			}
-			costOfDrinks =
+			costOfDrinks = 2 * numberOfDrinks;
+			
+		
 
-			subtotal = (costOfSize + costOfToppings) * nudNumberOfPizzas + costOfDrinks + costOfFries;
+
+			subtotal = costOfSize + costOfToppings * numberOfPizzas + costOfDrinks + costOfFries;
+			lblSubtotalAnswer.Text = String.Format("${0:0.00}", subtotal);
+			HST = subtotal * tax;
+			lblHSTAnswer.Text = String.Format("${0:0.00}", HST);
+			total = subtotal + HST;
+			lblTotalAnswer.Text = String.Format("${0:0.00}", total);
 			studentDiscount = total * 0.25;
+			discountPrice = total - studentDiscount;
+
+			if (this.radYesStudent.Checked == true)
+			{
+				lblStudentPriceAnswer.Text = String.Format("${0:0.00}", discountPrice);
+				lblError3.Text = "--";
+			}
+			else if (this.radNoStudent.Checked == true)
+			{
+				lblStudentPriceAnswer.Text = "n/a";
+				lblError3.Text = "--";
+
+			}
+			else
+			{ lblError3.Text = "Please state whether you are a student or not";
+			}
 
 
 
@@ -93,6 +138,11 @@ namespace PizzaOrderTristanR
 		private void nudDrinks_ValueChanged(object sender, EventArgs e)
 		{
 
+		}
+
+		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }
