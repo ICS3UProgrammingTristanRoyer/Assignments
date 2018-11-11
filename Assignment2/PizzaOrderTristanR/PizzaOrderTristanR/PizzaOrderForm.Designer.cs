@@ -57,19 +57,18 @@
 			this.radOntario = new System.Windows.Forms.RadioButton();
 			this.radQuebec = new System.Windows.Forms.RadioButton();
 			this.lblFries = new System.Windows.Forms.Label();
-			this.lblError1 = new System.Windows.Forms.Label();
 			this.lblError2 = new System.Windows.Forms.Label();
 			this.lblError3 = new System.Windows.Forms.Label();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.grbProvince = new System.Windows.Forms.GroupBox();
+			this.grbStudent = new System.Windows.Forms.GroupBox();
 			this.nudFries = new System.Windows.Forms.NumericUpDown();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudToppings)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudDrinks)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudNumberOfPizzas)).BeginInit();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
+			this.grbProvince.SuspendLayout();
+			this.grbStudent.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudFries)).BeginInit();
 			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
@@ -136,7 +135,7 @@
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
 			this.exitToolStripMenuItem.Text = "Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
 			// 
@@ -209,7 +208,7 @@
 			// nudNumberOfPizzas
 			// 
 			this.nudNumberOfPizzas.BackColor = System.Drawing.Color.Teal;
-			this.nudNumberOfPizzas.Location = new System.Drawing.Point(197, 134);
+			this.nudNumberOfPizzas.Location = new System.Drawing.Point(197, 132);
 			this.nudNumberOfPizzas.Minimum = new decimal(new int[] {
             1,
             0,
@@ -372,25 +371,16 @@
 			this.lblFries.TabIndex = 30;
 			this.lblFries.Text = "How many fries do you want?:";
 			// 
-			// lblError1
-			// 
-			this.lblError1.AutoSize = true;
-			this.lblError1.BackColor = System.Drawing.Color.Teal;
-			this.lblError1.Location = new System.Drawing.Point(320, 483);
-			this.lblError1.Name = "lblError1";
-			this.lblError1.Size = new System.Drawing.Size(13, 13);
-			this.lblError1.TabIndex = 34;
-			this.lblError1.Text = "--";
-			// 
 			// lblError2
 			// 
 			this.lblError2.AutoSize = true;
 			this.lblError2.BackColor = System.Drawing.Color.Teal;
-			this.lblError2.Location = new System.Drawing.Point(320, 512);
+			this.lblError2.Location = new System.Drawing.Point(320, 514);
 			this.lblError2.Name = "lblError2";
 			this.lblError2.Size = new System.Drawing.Size(13, 13);
 			this.lblError2.TabIndex = 35;
 			this.lblError2.Text = "--";
+			this.lblError2.Click += new System.EventHandler(this.lblError2_Click);
 			// 
 			// lblError3
 			// 
@@ -402,27 +392,27 @@
 			this.lblError3.TabIndex = 36;
 			this.lblError3.Text = "--";
 			// 
-			// groupBox1
+			// grbProvince
 			// 
-			this.groupBox1.Controls.Add(this.radOntario);
-			this.groupBox1.Controls.Add(this.radQuebec);
-			this.groupBox1.Location = new System.Drawing.Point(150, 333);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(200, 78);
-			this.groupBox1.TabIndex = 38;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Provinces";
+			this.grbProvince.Controls.Add(this.radOntario);
+			this.grbProvince.Controls.Add(this.radQuebec);
+			this.grbProvince.Location = new System.Drawing.Point(150, 333);
+			this.grbProvince.Name = "grbProvince";
+			this.grbProvince.Size = new System.Drawing.Size(200, 78);
+			this.grbProvince.TabIndex = 38;
+			this.grbProvince.TabStop = false;
+			this.grbProvince.Text = "Provinces";
 			// 
-			// groupBox2
+			// grbStudent
 			// 
-			this.groupBox2.Controls.Add(this.radYesStudent);
-			this.groupBox2.Controls.Add(this.radNoStudent);
-			this.groupBox2.Location = new System.Drawing.Point(150, 259);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(200, 68);
-			this.groupBox2.TabIndex = 39;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Student?";
+			this.grbStudent.Controls.Add(this.radYesStudent);
+			this.grbStudent.Controls.Add(this.radNoStudent);
+			this.grbStudent.Location = new System.Drawing.Point(150, 259);
+			this.grbStudent.Name = "grbStudent";
+			this.grbStudent.Size = new System.Drawing.Size(200, 68);
+			this.grbStudent.TabIndex = 39;
+			this.grbStudent.TabStop = false;
+			this.grbStudent.Text = "Student?";
 			// 
 			// nudFries
 			// 
@@ -457,11 +447,10 @@
 			this.ClientSize = new System.Drawing.Size(649, 624);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.nudFries);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
+			this.Controls.Add(this.grbStudent);
+			this.Controls.Add(this.grbProvince);
 			this.Controls.Add(this.lblError3);
 			this.Controls.Add(this.lblError2);
-			this.Controls.Add(this.lblError1);
 			this.Controls.Add(this.lblFries);
 			this.Controls.Add(this.lblProvince);
 			this.Controls.Add(this.lblStudent);
@@ -492,10 +481,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.nudToppings)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudDrinks)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.nudNumberOfPizzas)).EndInit();
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
+			this.grbProvince.ResumeLayout(false);
+			this.grbProvince.PerformLayout();
+			this.grbStudent.ResumeLayout(false);
+			this.grbStudent.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudFries)).EndInit();
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
@@ -534,11 +523,10 @@
 		private System.Windows.Forms.RadioButton radOntario;
 		private System.Windows.Forms.RadioButton radQuebec;
 		private System.Windows.Forms.Label lblFries;
-		private System.Windows.Forms.Label lblError1;
 		private System.Windows.Forms.Label lblError2;
 		private System.Windows.Forms.Label lblError3;
-		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.GroupBox grbProvince;
+		private System.Windows.Forms.GroupBox grbStudent;
 		private System.Windows.Forms.NumericUpDown nudFries;
 		private System.Windows.Forms.GroupBox groupBox3;
 	}
